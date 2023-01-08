@@ -159,7 +159,7 @@ def generation(service_name, decoder, device):
 if __name__ == '__main__':
     starttime = datetime.datetime.now()
     word_to_ix = {}
-    word_to_ix = np.load('/home/Miner/attentionmodel_group/word_to_ix.npy', allow_pickle=True)
+    word_to_ix = np.load('/home/MINER/attentionmodel_group/word_to_ix.npy', allow_pickle=True)
     word_to_ix = word_to_ix.item()
     ix_to_word = {}
 
@@ -167,26 +167,26 @@ if __name__ == '__main__':
         ix_to_word[word_to_ix[key1]] = key1
 
     # embeddings = torch.load('embedding.pt')
-    if os.path.exists('/home/Miner/attentionmodel_group/apifuzzmodel.pt') == True:
-        model = torch.load('/home/Miner/attentionmodel_group/apifuzzmodel.pt')
+    if os.path.exists('/home/MINER/attentionmodel_group/apifuzzmodel.pt') == True:
+        model = torch.load('/home/MINER/attentionmodel_group/apifuzzmodel.pt')
 
     decoder = model.decoder
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     torch.set_grad_enabled(False)
 
     service_name_list = []
-    if os.path.exists("/home/Miner/attentionmodel_group/service_name_list.pkl") == True:
-        service_name_list = pickle.load(open("/home/Miner/attentionmodel_group/service_name_list.pkl", 'rb'))
+    if os.path.exists("/home/MINER/attentionmodel_group/service_name_list.pkl") == True:
+        service_name_list = pickle.load(open("/home/MINER/attentionmodel_group/service_name_list.pkl", 'rb'))
     else:
-        trainingset = pickle.load(open("/home/Miner/restler_bin_atten/trainingset.pkl", 'rb'))
+        trainingset = pickle.load(open("/home/MINER/restler_bin_atten/trainingset.pkl", 'rb'))
         for lyui in range(len(trainingset)):
             tmpservice_name = str(trainingset[lyui][1]) + trainingset[lyui][4]
             if tmpservice_name not in service_name_list:
                 service_name_list.append(tmpservice_name)
-        with open("/home/Miner/attentionmodel_group/service_name_list.pkl", 'wb') as f:
+        with open("/home/MINER/attentionmodel_group/service_name_list.pkl", 'wb') as f:
             pickle.dump(service_name_list, f, pickle.HIGHEST_PROTOCOL)
 
-    listword = np.load('/home/Miner/attentionmodel_group/listword.npy', allow_pickle=True)
+    listword = np.load('/home/MINER/attentionmodel_group/listword.npy', allow_pickle=True)
     listword = listword.tolist()
     d = sorted(listword.items(), key=lambda x: x[1], reverse=True)
     listwordsort = [key for key, value in d]
@@ -243,6 +243,6 @@ if __name__ == '__main__':
     for key1 in dictoutput.keys():
         print("\n " + str(key1) + "  " + str(len(dictoutput[key1])))
 
-    with open("/home/Miner/restler_bin_atten/mutationlist.pkl", "wb") as f:
+    with open("/home/MINER/restler_bin_atten/mutationlist.pkl", "wb") as f:
         pickle.dump(dictoutput, f, pickle.HIGHEST_PROTOCOL)
     print("generation time: " + str((datetime.datetime.now() - starttime).seconds))

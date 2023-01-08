@@ -212,7 +212,7 @@ dictsearch = {}
 if __name__ == '__main__':
 
     starttime = datetime.datetime.now()
-    trainingset = pickle.load(open("/home/Miner/restler_bin_atten/trainingset.pkl", 'rb'))
+    trainingset = pickle.load(open("/home/MINER/restler_bin_atten/trainingset.pkl", 'rb'))
 
     service_name_list = []
     for case in trainingset:
@@ -301,11 +301,11 @@ if __name__ == '__main__':
     print("large: %d" % (largelen))  # 35
     print("small: %d" % (smalllen))  # 1
 
-    np.save('/home/Miner/attentionmodel_group/listword.npy', listword)
+    np.save('/home/MINER/attentionmodel_group/listword.npy', listword)
     word_to_ix = {}
     max_length = largelen + 1
 
-    with open("/home/Miner/attentionmodel_group/service_name_list.pkl", 'wb') as f:
+    with open("/home/MINER/attentionmodel_group/service_name_list.pkl", 'wb') as f:
         pickle.dump(service_name_list, f, pickle.HIGHEST_PROTOCOL)
 
     # retraining model
@@ -315,12 +315,12 @@ if __name__ == '__main__':
     for key1 in listwordsort:
         word_to_ix[key1] = count1
         count1 = count1 + 1
-    np.save('/home/Miner/attentionmodel_group/word_to_ix.npy', word_to_ix)
+    np.save('/home/MINER/attentionmodel_group/word_to_ix.npy', word_to_ix)
 
     #  train the model, saving the parameters that give the best validation loss.
     wordlength = len(word_to_ix)
     embeddings = nn.Embedding(wordlength + 1, DEC_EMB_DIM, padding_idx=0)
-    torch.save(embeddings, '/home/Miner/attentionmodel_group/embedding.pt')
+    torch.save(embeddings, '/home/MINER/attentionmodel_group/embedding.pt')
 
     # training data build
 
@@ -409,7 +409,7 @@ if __name__ == '__main__':
         epoch_mins, epoch_secs = epoch_time(start_time, end_time)
         if valid_loss < best_valid_loss:
             best_valid_loss = valid_loss
-            torch.save(model, '/home/Miner/attentionmodel_group/apifuzzmodel.pt')
+            torch.save(model, '/home/MINER/attentionmodel_group/apifuzzmodel.pt')
             torch.save(model.decoder.embedding, 'embedding.pt')
         print(f'Epoch: {epoch + 1:02} | Time: {epoch_mins}m {epoch_secs}s')
         print(f'\tTrain Loss: {train_loss:.3f} | Train PPL: {math.exp(train_loss):7.3f}')
