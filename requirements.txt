@@ -1,0 +1,16 @@
+certifi==2020.12.5
+charset-normalizer==2.0.6
+configparser==5.0.2
+goto-statement==1.2
+idna==3.2
+joblib==1.0.1
+lxml==4.6.3
+numpy==1.20.2
+requests==2.26.0
+scikit-learn==0.24.1
+scipy==1.6.2
+sklearn==0.0
+threadpoolctl==2.1.0
+torch==1.8.1
+typing-extensions==3.7.4.3
+urllib3==1.26.7

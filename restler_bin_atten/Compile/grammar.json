@@ -1,0 +1,1704 @@
+{
+  "Requests": [
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "ref_name",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "since",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "DateTime",
+                        "2019-06-26T20:20:39+00:00"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "until",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "path",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "all",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "with_stats",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "first_parent",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "order",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "String",
+                            [
+                              "default",
+                              "topo"
+                            ],
+                            "default"
+                          ]
+                        },
+                        "default"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits",
+        "method": "Post"
+      },
+      "method": "Post",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "branch",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "commit_message",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "start_branch",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "start_sha",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "start_project",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "author_email",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "author_name",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "stats",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "force",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "actions",
+                {
+                  "InternalNode": [
+                    {
+                      "name": "",
+                      "propertyType": "Array",
+                      "isRequired": true,
+                      "isReadOnly": false
+                    },
+                    [
+                      {
+                        "InternalNode": [
+                          {
+                            "name": "",
+                            "propertyType": "Object",
+                            "isRequired": true,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "LeafNode": {
+                                "name": "action",
+                                "payload": {
+                                  "Fuzzable": [
+                                    {
+                                      "Enum": [
+                                        "String",
+                                        [
+                                          "create",
+                                          "delete",
+                                          "move",
+                                          "update",
+                                          "chmod"
+                                        ],
+                                        null
+                                      ]
+                                    },
+                                    "create"
+                                  ]
+                                },
+                                "isRequired": true,
+                                "isReadOnly": false
+                              }
+                            },
+                            {
+                              "LeafNode": {
+                                "name": "file_path",
+                                "payload": {
+                                  "Fuzzable": [
+                                    "String",
+                                    "fuzzstring"
+                                  ]
+                                },
+                                "isRequired": true,
+                                "isReadOnly": false
+                              }
+                            },
+                            {
+                              "LeafNode": {
+                                "name": "previous_path",
+                                "payload": {
+                                  "Fuzzable": [
+                                    "String",
+                                    "fuzzstring"
+                                  ]
+                                },
+                                "isRequired": false,
+                                "isReadOnly": false
+                              }
+                            },
+                            {
+                              "LeafNode": {
+                                "name": "content",
+                                "payload": {
+                                  "Fuzzable": [
+                                    "String",
+                                    "fuzzstring"
+                                  ]
+                                },
+                                "isRequired": false,
+                                "isReadOnly": false
+                              }
+                            },
+                            {
+                              "LeafNode": {
+                                "name": "encoding",
+                                "payload": {
+                                  "Fuzzable": [
+                                    {
+                                      "Enum": [
+                                        "String",
+                                        [
+                                          "base64",
+                                          "text"
+                                        ],
+                                        "text"
+                                      ]
+                                    },
+                                    "base64"
+                                  ]
+                                },
+                                "isRequired": false,
+                                "isReadOnly": false
+                              }
+                            },
+                            {
+                              "LeafNode": {
+                                "name": "last_commit_id",
+                                "payload": {
+                                  "Fuzzable": [
+                                    "String",
+                                    "fuzzstring"
+                                  ]
+                                },
+                                "isRequired": false,
+                                "isReadOnly": false
+                              }
+                            },
+                            {
+                              "LeafNode": {
+                                "name": "execute_filemode",
+                                "payload": {
+                                  "Fuzzable": [
+                                    "Bool",
+                                    "true"
+                                  ]
+                                },
+                                "isRequired": false,
+                                "isReadOnly": false
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ],
+        [
+          "Content-Type",
+          "application/json"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "responseParser": {
+        "writerVariables": [
+          {
+            "requestId": {
+              "endpoint": "/projects/{id}/repository/commits",
+              "method": "Post"
+            },
+            "accessPathParts": {
+              "path": [
+                "last_pipeline",
+                "sha"
+              ]
+            }
+          }
+        ]
+      },
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "stats",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/refs",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "refs"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "type",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "String",
+                            [
+                              "branch",
+                              "tag",
+                              "all"
+                            ],
+                            "all"
+                          ]
+                        },
+                        "branch"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/cherry_pick",
+        "method": "Post"
+      },
+      "method": "Post",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "cherry_pick"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "dry_run",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/revert",
+        "method": "Post"
+      },
+      "method": "Post",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "revert"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "dry_run",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/diff",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "diff"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/comments",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "comments"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/discussions",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "discussions"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "statuses"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "ref",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "stage",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "String",
+                            [
+                              "build",
+                              "test",
+                              "deploy"
+                            ],
+                            "test"
+                          ]
+                        },
+                        "build"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "name",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "all",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Bool",
+                        "true"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "page",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Int",
+                        "1"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "per_page",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "Int",
+                        "1"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/statuses/{sha}",
+        "method": "Post"
+      },
+      "method": "Post",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "statuses"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/merge_requests",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "merge_requests"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/projects/{id}/repository/commits/{sha}/signature",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "api"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "v4"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "projects"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "String",
+            "fuzzstring"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "repository"
+          ]
+        },
+        {
+          "Constant": [
+            "String",
+            "commits"
+          ]
+        },
+        {
+          "DynamicObject": "_projects__id__repository_commits_post_last_pipeline_sha"
+        },
+        {
+          "Constant": [
+            "String",
+            "signature"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "10.214.242.55"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    }
+  ]
+}

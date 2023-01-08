@@ -1,0 +1,18 @@
+{
+  "SwaggerSpecFilePath": [
+    "/home/tmprestler/restler_bin_atten_run_group/../yaml/commit.yaml"
+  ],
+  "GrammarOutputDirectoryPath": "/home/tmprestler/restler_bin_atten_run_group/Compile",
+  "CustomDictionaryFilePath": "/home/tmprestler/restler_bin_atten_run_group/Compile/defaultDict.json",
+  "IncludeOptionalParameters": true,
+  "UseQueryExamples": true,
+  "UseBodyExamples": true,
+  "DiscoverExamples": false,
+  "ExamplesDirectory": "",
+  "DataFuzzing": true,
+  "ReadOnlyFuzz": false,
+  "ResolveQueryDependencies": true,
+  "ResolveBodyDependencies": true,
+  "UseRefreshableToken": true,
+  "AllowGetProducers": false
+}

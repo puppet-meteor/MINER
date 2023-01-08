@@ -1,0 +1,174 @@
+[05/17/2021 06:02:16] Generating grammar...
+[05/17/2021 06:02:16] Getting requests...
+[05/17/2021 06:02:17] Getting dependencies...
+[05/17/2021 06:02:17] Getting consumers...
+[05/17/2021 06:02:17] Getting producers...
+[05/17/2021 06:02:17] Done processing producers
+[05/17/2021 06:02:17] Compute dependencies
+found unsupported format: data-time
+[05/17/2021 06:02:17] [05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/merge_requests"
+  method = Get }[
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Post }
+[[[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/discussions"
+  method = Get }[
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/comments"
+  method = Get }
+[05/17/2021 06:02:17[] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/diff"
+  method = Get }[
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/diff"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/cherry_pick"
+  method = Post }
+[[[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/statuses/{sha}"
+  method = Post }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/refs"
+  method = Get }
+[[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/comments"
+  method = Get }05/17/2021 06:02:17
+] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/discussions"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/revert"
+  method = Post }
+[05/17/2021 06:02:17Second pass dependencies for request { endpoint = "/projects/{id}/statuses/{sha}"
+  method = Post }
+] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Get }[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/revert"
+  method = Post }
+
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/signature"
+  method = Get }
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/statuses"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/statuses"
+  method = Get }[
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/statuses"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/signature"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/refs"
+  method = Get }05/17/2021 06:02:17
+] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Post }
+05/17/2021 06:02:17[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/cherry_pick"
+  method = Post }
+[[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Get }
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/comments"
+  method = Get }[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/merge_requests"
+  method = Get }
+
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/signature"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Post }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/merge_requests"
+  method = Get }[
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/revert"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/comments"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/discussions"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/merge_requests"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/refs"
+  method = Get }
+[05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/statuses/{sha}"
+  method = Post }
+[[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/discussions"
+  method = Get }
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/cherry_pick"
+  method = Post }
+05/17/2021 06:02:17] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/revert"
+  method = Post }
+] Second pass dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/diff"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/statuses/{sha}"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/discussions"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/statuses/{sha}"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/statuses"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/signature"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/cherry_pick"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/comments"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/signature"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/diff"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/merge_requests"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/statuses"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/comments"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/diff"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/discussions"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/merge_requests"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/refs"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/revert"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/revert"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/diff"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/signature"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/refs"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/refs"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/cherry_pick"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/statuses/{sha}"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/statuses"
+  method = Get }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits/{sha}/cherry_pick"
+  method = Post }
+[05/17/2021 06:02:17] Done dependencies for request { endpoint = "/projects/{id}/repository/commits"
+  method = Post }
+[05/17/2021 06:02:17] Dependency analysis completed.
+[05/17/2021 06:02:17] Generating request primitives...
+found unsupported format: data-time
+Writing new dictionary to /home/tmprestler/restler_bin_atten_run_group/Compile/dict.json
+[05/17/2021 06:02:17] Generating python grammar...
+[05/17/2021 06:02:17] Get requests
+found unsupported format: data-time
+[05/17/2021 06:02:17] Done get requests
+[05/17/2021 06:02:17] Done generating python grammar.
+Workflow completed.  See /home/tmprestler/restler_bin_atten_run_group/Compile for REST-ler grammar.

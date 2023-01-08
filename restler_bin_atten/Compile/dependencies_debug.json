@@ -1,0 +1,2229 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "all"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "all",
+        "ProducerParameterName": "all",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "since"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "since",
+        "ProducerParameterName": "since",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "path"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "path",
+        "ProducerParameterName": "path",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "until"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "until",
+        "ProducerParameterName": "until",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "with_stats"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "with_stats",
+        "ProducerParameterName": "stats",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "order"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "order",
+        "ProducerParameterName": "order",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "first_parent"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "first_parent",
+        "ProducerParameterName": "parent",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "ref_name"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "ref_name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "start_branch"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "start_branch",
+        "ProducerParameterName": "branch",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "branch"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "branch",
+        "ProducerParameterName": "branch",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "stats"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "stats",
+        "ProducerParameterName": "stats",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "force"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "force",
+        "ProducerParameterName": "force",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "commit_message"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "commit_message",
+        "ProducerParameterName": "message",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "author_email"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "author_email",
+        "ProducerParameterName": "email",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "author_name"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "author_name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "start_sha"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "start_sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "start_project"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "start_project",
+        "ProducerParameterName": "project",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "action",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "action"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/action",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "action"
+          ]
+        },
+        "ResourceName": "action",
+        "ProducerParameterName": "action",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": {
+          "Enum": [
+            "String",
+            [
+              "create",
+              "delete",
+              "move",
+              "update",
+              "chmod"
+            ],
+            null
+          ]
+        }
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "content",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "content"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/content",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "content"
+          ]
+        },
+        "ResourceName": "content",
+        "ProducerParameterName": "content",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "encoding",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "encoding"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/encoding",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "encoding"
+          ]
+        },
+        "ResourceName": "encoding",
+        "ProducerParameterName": "encoding",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": {
+          "Enum": [
+            "String",
+            [
+              "base64",
+              "text"
+            ],
+            "text"
+          ]
+        }
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "execute_filemode",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "execute_filemode"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/execute_filemode",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "execute_filemode"
+          ]
+        },
+        "ResourceName": "execute_filemode",
+        "ProducerParameterName": "filemode",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "file_path",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "file_path"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/file_path",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "file_path"
+          ]
+        },
+        "ResourceName": "file_path",
+        "ProducerParameterName": "path",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "last_commit_id",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "last_commit_id"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/last_commit_id",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "last_commit_id"
+          ]
+        },
+        "ResourceName": "last_commit_id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "previous_path",
+            "fullPath": {
+              "path": [
+                "[0]",
+                "previous_path"
+              ]
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPath": "[0]/previous_path",
+        "AccessPathParts": {
+          "path": [
+            "[0]",
+            "previous_path"
+          ]
+        },
+        "ResourceName": "previous_path",
+        "ProducerParameterName": "path",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "stats"
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "stats",
+        "ProducerParameterName": "stats",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "commits",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/cherry_pick",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "cherry_pick",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/cherry_pick",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "cherry_pick",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/cherry_pick",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "dry_run"
+        },
+        "ContainerName": "cherry_pick",
+        "PathContainerName": "cherry_pick",
+        "CandidateTypeNames": [
+          "cherry__pick"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "dry_run",
+        "ProducerParameterName": "run",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/comments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "comments",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/comments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "comments",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/diff",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "diff",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/diff",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "diff",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/discussions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "discussions",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/discussions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "discussions",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/merge_requests",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "merge_requests",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/merge_requests",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "merge_requests",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/refs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "type"
+        },
+        "ContainerName": "refs",
+        "PathContainerName": "refs",
+        "CandidateTypeNames": [
+          "ref"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "type",
+        "ProducerParameterName": "type",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/refs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "refs",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/refs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "refs",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/revert",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "revert",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/revert",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "revert",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/revert",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "dry_run"
+        },
+        "ContainerName": "revert",
+        "PathContainerName": "revert",
+        "CandidateTypeNames": [
+          "revert"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "dry_run",
+        "ProducerParameterName": "run",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/signature",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "signature",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/signature",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "signature",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "all"
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "all",
+        "ProducerParameterName": "all",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "repository",
+              "commits"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "commits",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "commit"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/projects/{id}/repository/commits",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "sha",
+              "fullPath": {
+                "path": [
+                  "last_pipeline",
+                  "sha"
+                ]
+              }
+            }
+          },
+          "ContainerName": "last_pipeline",
+          "BodyContainerName": "last_pipeline",
+          "PathContainerName": "commits",
+          "CandidateTypeNames": [
+            "last__pipeline",
+            "pipeline"
+          ],
+          "AccessPath": "last_pipeline/sha",
+          "AccessPathParts": {
+            "path": [
+              "last_pipeline",
+              "sha"
+            ]
+          },
+          "ResourceName": "sha",
+          "ProducerParameterName": "sha",
+          "IsNestedBodyResource": true,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "page"
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "page",
+        "ProducerParameterName": "page",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "ref"
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "ref",
+        "ProducerParameterName": "ref",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "name"
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "per_page"
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "per_page",
+        "ProducerParameterName": "page",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/repository/commits/{sha}/statuses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "stage"
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "stage",
+        "ProducerParameterName": "stage",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/statuses/{sha}",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "projects"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "projects",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "project"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/projects/{id}/statuses/{sha}",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "sha",
+            "pathToParameter": [
+              "projects",
+              "{id}",
+              "statuses"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "statuses",
+        "PathContainerName": "statuses",
+        "CandidateTypeNames": [
+          "status"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sha",
+        "ProducerParameterName": "sha",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  }
+]
