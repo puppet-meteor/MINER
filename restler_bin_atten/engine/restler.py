@@ -587,7 +587,7 @@ if __name__ == '__main__':
         sys.exit(-1)
 
     print("lyu dict  requestid: " + str(datacollect.requestid))
-    with open('/home/Miner/restler_bin_atten/dictrequestid.pkl', 'wb') as f:
+    with open('/home/MINER/restler_bin_atten/dictrequestid.pkl', 'wb') as f:
         pickle.dump(datacollect.requestid, f, pickle.HIGHEST_PROTOCOL)
     print("lyu  trainingset: ")
     for lyui in range(len(datacollect.trainingset)):
@@ -598,7 +598,7 @@ if __name__ == '__main__':
         print(str(datacollect.trainingset400[lyui]))
         datacollect.trainingset.append(datacollect.trainingset400[lyui])
 
-    with open('/home/Miner/restler_bin_atten/trainingset.pkl', 'wb') as f:
+    with open('/home/MINER/restler_bin_atten/trainingset.pkl', 'wb') as f:
         pickle.dump(datacollect.trainingset, f, pickle.HIGHEST_PROTOCOL)
 
     # print("datacollect.countid: " + str(datacollect.countid))

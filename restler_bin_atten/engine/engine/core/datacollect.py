@@ -152,8 +152,8 @@ def readdata():
     global mutationtrainingset
     global requestid
     tmpmutationlist = {}
-    if os.path.exists('/home/Miner/restler_bin_atten/mutationlist.pkl'):
-        tmpmutationlist = pickle.load(open("/home/Miner/restler_bin_atten/mutationlist.pkl", 'rb'))
+    if os.path.exists('/home/MINER/restler_bin_atten/mutationlist.pkl'):
+        tmpmutationlist = pickle.load(open("/home/MINER/restler_bin_atten/mutationlist.pkl", 'rb'))
     for key1 in  tmpmutationlist.keys():
         if key1 not in mutationlist.keys():
             tmpvalue1 = []
@@ -164,13 +164,13 @@ def readdata():
             for value1 in tmpmutationlist[key1]:
                 mutationlist[key1].append(value1)
 
-    if os.path.exists('/home/Miner/restler_bin_atten/dictrequestid.pkl'):
-        with open('/home/Miner/restler_bin_atten/dictrequestid.pkl', 'rb') as f:
+    if os.path.exists('/home/MINER/restler_bin_atten/dictrequestid.pkl'):
+        with open('/home/MINER/restler_bin_atten/dictrequestid.pkl', 'rb') as f:
             requestid = pickle.load(f)
 
 
-    if os.path.exists('/home/Miner/restler_bin_atten/trainingset.pkl'):
-        tmptrainingset = pickle.load(open("/home/Miner/restler_bin_atten/trainingset.pkl", 'rb'))
+    if os.path.exists('/home/MINER/restler_bin_atten/trainingset.pkl'):
+        tmptrainingset = pickle.load(open("/home/MINER/restler_bin_atten/trainingset.pkl", 'rb'))
     
         for case in tmptrainingset:
             if case[2] == 'name=':
@@ -233,16 +233,16 @@ def retrain():
     with open(retrainingmodel_path, 'a') as f:
         f.write("start retrainingmodel\n" + str(whether_start_mutation_list) +"\n")
         f.write("mutation_list length: "+str(len(mutationlist))+"\nmutationlist_sum: "+str(mutationlist_sum)+"\nnowtime: "+str(datetime.datetime.now())+"\n")
-    with open('/home/Miner/restler_bin_atten/dictrequestid.pkl', 'wb') as f:
+    with open('/home/MINER/restler_bin_atten/dictrequestid.pkl', 'wb') as f:
         pickle.dump(requestid, f, pickle.HIGHEST_PROTOCOL)
 
-    with open('/home/Miner/restler_bin_atten/trainingset.pkl', 'wb') as f:
+    with open('/home/MINER/restler_bin_atten/trainingset.pkl', 'wb') as f:
         pickle.dump(trainingset, f, pickle.HIGHEST_PROTOCOL)
 
     trainingset = []
-    cmd = 'python /home/Miner/attentionmodel_group/attention.py'
+    cmd = 'python /home/MINER/attentionmodel_group/attention.py'
     os.system(cmd)
-    cmd = 'python /home/Miner/attentionmodel_group/generation.py'
+    cmd = 'python /home/MINER/attentionmodel_group/generation.py'
     os.system(cmd)
     readdata()
 
