@@ -1,6 +1,7 @@
 # Miner
 ### 1. Description
-We open source the prototype of MINER. 
+We open source the prototype of MINER. MINER is a REST API fuzzer that utilizes three data-driven designs working together to guide the sequence generation, improve the request generation quality, and capture the unique errors caused by  incorrect parameter usage. 
+More details can be found in the prepublication PDF. 
 
 ### 2. Introduction to Usage
 First of all, our code must be placed under the '/home/MINER' path, because we set the absolute path in our code. Of cource, you can can modify the code according to your needs. 
