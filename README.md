@@ -1,4 +1,4 @@
-# Miner
+# MINER
 ### 1. Description
 We open source the prototype of MINER. MINER is a REST API fuzzer that utilizes three data-driven designs working together to guide the sequence generation, improve the request generation quality, and capture the unique errors caused by  incorrect parameter usage. 
 More details can be found in the prepublication PDF. 
